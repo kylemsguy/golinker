@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "golinker",
     "version": "1.0.0",
-    "description": "An extension that redirects go/ to aka.ms/",
+    "description": "An extension that redirects go/ to another shortlink provider",
     "icons": {
 
     },
@@ -18,12 +18,15 @@
     "permissions": [
         "declarativeNetRequest",
         "declarativeNetRequestFeedback",
-        "declarativeNetRequestWithHostAccess"
+        "declarativeNetRequestWithHostAccess",
+        "webRequest",
+        "storage"
     ],
     "host_permissions": [
         "http://go/"
     ],
     "action": {
         "default_popup": "popup.html"
-    }
+    },
+    "options_page": "options.html"
 }

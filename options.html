@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>golinker options</title>
+    <link rel="stylesheet" src="css/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--with-leading-icon">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="shortlink-label">shortlink-label (e.g. go, ms, ln; default is go)</span>
+        <!-- <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading" tabindex="0"
+            role="button">event</i> -->
+        <input class="mdc-text-field__input" type="text" aria-labelledby="shortlink-label" id="shortlink">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <br>
+    <label class="mdc-text-field mdc-text-field--filled mdc-text-field--with-leading-icon">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="target-label">Target (The link shortener to redirect to e.g. aka.ms, tinyurl.com, g.co)</span>
+        <!-- <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading" tabindex="0"
+            role="button">event</i> -->
+        <input class="mdc-text-field__input" type="text" aria-labelledby="target-label" id="target">
+        <span class="mdc-line-ripple"></span>
+    </label>
+    <br>
+    <br>
+    <div id="status"></div>
+    <br>
+    <button id="save">Save</button>
+
+    <script src="js/material-components-web.min.js"></script>
+    <script src="js/options.js"></script>
+</body>
+
+</html>
