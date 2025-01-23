@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "transform": {
+                    "host": "aka.ms"
+                }
+            }
+        },
+        "condition": {
+            "urlFilter": "http://go/",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "golinker",
+    "version": "1.0.0",
+    "description": "An extension that redirects go/ to aka.ms/",
+    "icons": {
+
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules_1.json"
+            }
+        ]
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+        "http://go/"
+    ]
+}
