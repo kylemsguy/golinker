@@ -22,5 +22,8 @@
     ],
     "host_permissions": [
         "http://go/"
-    ]
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
 }
